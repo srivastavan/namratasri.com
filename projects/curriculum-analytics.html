@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curriculum analytics at scale | Namrata Srivastava</title>
+<meta name="description" content="Learning analytics on 7M+ course enrollments at Monash University to inform curriculum decisions and support at-risk students.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="era2">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="name" href="../index.html">Namrata Srivastava</a>
+    <nav aria-label="Main"><ul>
+      <li><a href="../index.html#research">Research</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../publications.html">Publications</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+      <li><a class="cv" href="../resume.pdf">Résumé</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="p-head">
+    <svg class="fixations" aria-hidden="true"></svg>
+    <div class="wrap">
+      <div class="crumb"><a href="../index.html#research">Research</a> / Learning analytics at scale</div>
+      <h1>Which course choices set students up to succeed?</h1>
+      <p class="sum">At Monash University, I analyzed more than 7 million course enrollment records to give faculty evidence for curriculum decisions, and built tools to support students at risk of falling behind.</p>
+      <div class="tags"><span class="era-tag">Learning analytics at scale, 2020 to 2023</span><span>Curriculum analytics</span><span>Predictive modeling</span><span>Dashboards</span><span>Python and R</span></div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <figure class="p-fig">
+      <img src="../images/course-choices-plot.png" alt="Dot plot comparing high-performing and low-performing students. For each course, it shows when in their degree students took it, how many took it, and how difficult it was for that group.">
+      <figcaption>When high- and low-performing students took each course, and how difficult it was for them.</figcaption>
+    </figure>
+
+    <div class="p-body">
+      <aside class="glance" aria-labelledby="glance-h">
+        <h2 id="glance-h">At a glance</h2>
+        <dl>
+          <dt>Where</dt><dd>Centre for Learning Analytics, Monash University</dd>
+          <dt>When</dt><dd>2020 to 2023</dd>
+          <dt>Data</dt><dd>7M+ course enrollment records from the student information system and the learning management system</dd>
+          <dt>Methods</dt><dd>Pathway modeling, statistical inference, random forests, logistic regression, R Shiny dashboards</dd>
+          <dt>Collaborators</dt><dd>Dragan Gašević, Sadia Nawaz, Yi-Shan Tsai</dd>
+          <dt>Published in</dt><dd>Journal of Learning Analytics, 2024</dd>
+        </dl>
+      </aside>
+
+      <div class="story">
+        <section>
+          <h2>The problem</h2>
+          <p>Universities make curriculum decisions, such as which subjects to require, recommend, or sequence, with little evidence about how those choices affect students. At the same time, students who are falling behind are often identified too late to help.</p>
+        </section>
+        <section>
+          <h2>What I did</h2>
+          <ul class="points">
+            <li>Analyzed historical records of every course in the university, more than 7 million student enrollments, to study how subject choices relate to academic performance.</li>
+            <li>Built early-warning models (random forests and logistic regression) to identify at-risk students, and designed feedback interventions to support them.</li>
+            <li>Designed a curriculum analytics dashboard in R Shiny so faculty could explore program-level patterns themselves.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>What I found</h2>
+          <p class="find">The courses students chose, and when they took them, were linked to their academic performance, which pointed to specific pathways and bottleneck courses worth redesigning.</p>
+        </section>
+        <section>
+          <h2>Why it matters</h2>
+          <p>The Faculty of Information Technology adopted the recommendations from this work to improve its teaching practices. It showed how institutional data, used carefully, can move curriculum decisions from intuition to evidence.</p>
+        </section>
+        <section>
+          <h2>Publications</h2>
+          <ul class="pubs">
+            <li><b>Curriculum analytics of course choices: Links with academic performance.</b> <span>Journal of Learning Analytics, 2024</span></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <nav class="next-proj" aria-label="More projects">
+      <a href="cognitive-load.html">Previous: Sensing learners</a>
+      <a href="scistory.html">Next: AI in K–12 classrooms</a>
+    </nav>
+  </div>
+</main>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <div><h2>Let's talk</h2><p>I'm looking for research scientist and data science roles in industry, especially where AI meets learning.</p></div>
+    <a class="mail" href="mailto:namratasrivastava.research@gmail.com">namratasrivastava.research@gmail.com</a>
+  </div>
+</footer>
+<script src="../assets/site.js"></script>
+</body>
+</html>

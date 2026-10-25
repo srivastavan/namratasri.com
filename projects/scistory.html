@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SciStory: AI characters for scientific inquiry | Namrata Srivastava</title>
+<meta name="description" content="SciStory is a story-based science game in which AI characters help students gather evidence and build arguments. I study how the agents shape students' inquiry in real classrooms.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="era3">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="name" href="../index.html">Namrata Srivastava</a>
+    <nav aria-label="Main"><ul>
+      <li><a href="../index.html#research">Research</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../publications.html">Publications</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+      <li><a class="cv" href="../resume.pdf">Résumé</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="p-head">
+    <svg class="fixations" aria-hidden="true"></svg>
+    <div class="wrap">
+      <div class="crumb"><a href="../index.html#research">Research</a> / AI in K–12 classrooms</div>
+      <h1>Can AI characters help students reason like scientists?</h1>
+      <p class="sum">SciStory: Pollinators is a story-based science game in which pairs of students decide whether their town should build a pollinator garden or a parking lot. AI characters answer their questions, give feedback on their arguments, and judge their final case. I study how these agents shape students' inquiry in real classrooms.</p>
+      <div class="tags"><span class="era-tag">AI in K–12 classrooms, 2024 to now</span><span>LLM agents</span><span>Classroom studies</span><span>Learning analytics</span><span>Responsible AI</span></div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <figure class="p-fig">
+      <img src="../images/scistory-agents.jpg" alt="Three AI characters in SciStory. Nadia, a beekeeper, answers a student's question about what happens without bees. Riley, a scientist, gives feedback that the student's argument for a community garden needs more specific reasons. The Mayor rejects a first argument and asks for more specific evidence.">
+      <figcaption>Three of SciStory's AI characters: Nadia answers questions, Riley gives feedback on arguments, and the Mayor decides whether the argument is convincing.</figcaption>
+    </figure>
+
+    <div class="p-body">
+      <aside class="glance" aria-labelledby="glance-h">
+        <h2 id="glance-h">At a glance</h2>
+        <dl>
+          <dt>Where</dt><dd>Vanderbilt University, with Indiana University, University of Illinois Urbana-Champaign, and NC State University</dd>
+          <dt>When</dt><dd>2024 to now</dd>
+          <dt>Classroom studies</dt><dd>73 sixth graders in Nashville (2026, which I led), and 15 student pairs in a 2025 pilot</dd>
+          <dt>Models</dt><dd>Llama-3.1-8B hosted locally for student privacy, and GPT-4o</dd>
+          <dt>Methods</dt><dd>Retrieval-augmented generation, game-state-aware dialogue, log analysis, Markov models, sequence mining, surveys, audio and screen recordings</dd>
+          <dt>Funding</dt><dd>National Science Foundation (DRL-2112635)</dd>
+          <dt>Shown at</dt><dd>LAK 2026 (Bergen) and AIED 2026 demo (Seoul)</dd>
+        </dl>
+      </aside>
+
+      <div class="story">
+        <section>
+          <h2>The problem</h2>
+          <p>Story-based games are great at getting students engaged, but engagement alone doesn't guarantee that students gather evidence, weigh it, and build a sound argument. AI agents could provide that support, yet little is known about how students actually respond to them in real classrooms, or whether they deepen thinking or just shortcut it.</p>
+        </section>
+
+        <section>
+          <h2>How SciStory works</h2>
+          <p>Students explore an illustrated town, talk with more than ten characters, take notes in a digital notebook, and draft an argument for the Mayor. The ending changes depending on whether they convince the Mayor. Each AI character has a distinct teaching role tied to one phase of scientific inquiry:</p>
+          <ul class="points">
+            <li><b>Content knowledge agents</b> (such as Nadia, the beekeeper) answer open-ended questions about pollinators and food systems.</li>
+            <li><b>Argument feedback agents</b> (such as Riley) coach students to strengthen claims and add evidence.</li>
+            <li><b>The Mayor</b> evaluates the final argument, and that judgment shapes the story's ending.</li>
+          </ul>
+          <h3>See it in action</h3>
+          <div class="video">
+            <iframe src="https://www.youtube-nocookie.com/embed/9bTEOeRFYo4" title="SciStory demo video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+          </div>
+        </section>
+
+        <section>
+          <h2>What I did</h2>
+          <ul class="points">
+            <li><b>Led a classroom study in Nashville</b> in April 2026 with 73 sixth graders using GPT-4o agents, collecting game logs, surveys, and audio and screen recordings of student pairs.</li>
+            <li><b>Analyzed the 2025 pilot</b> run by our partner team (15 student pairs, locally hosted Llama-3.1-8B). I turned raw game logs into coded inquiry phases and used Markov models and sequence mining to see how each agent shaped students' inquiry.</li>
+            <li><b>Now leading a multimodal analysis</b> of audio and screen recordings to capture peer discussion and reasoning that agent logs alone don't show.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>What I found</h2>
+          <p class="find">Each AI character pulled students into a different part of the inquiry cycle. The knowledge agent kept students gathering evidence, the feedback agent prompted repeated rounds of sharing and revising arguments, and the Mayor moved them toward reflection and conclusions.</p>
+          <p>There was also a caution: in 78% of conversations with the knowledge agent, students looped through investigation without moving on to build an argument. Agents need to be coordinated so students don't stay stuck in information gathering.</p>
+          <p>In the 2026 classroom study, students responded positively to the AI characters:</p>
+          <div class="results">
+            <div><b>78%</b><span>rated the AI characters helpful</span></div>
+            <div><b>82%</b><span>said the agents encouraged them to revise their writing</span></div>
+            <div><b>67%</b><span>found the game fun</span></div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Why it matters</h2>
+          <p>Counting how often students talk to an AI agent says little about learning. This work shows how to measure what agents actually do to students' reasoning, and it offers practical guidance for deploying LLMs in schools responsibly, including comparing a privacy-preserving open-source model with a commercial one across two classroom studies.</p>
+        </section>
+
+        <section>
+          <h2>Publications</h2>
+          <ul class="pubs">
+            <li><b>SciStory: An AI-powered narrative-centered learning environment for scientific inquiry.</b> <span>AIED 2026, demo</span></li>
+            <li><b>The role of LLM-powered conversational agents in supporting inquiry in a narrative-centered learning environment: A learning analytics study.</b> <span>LAK 2026, co-first author</span></li>
+            <li><b>A theory of adaptive scaffolding for LLM-based pedagogical agents.</b> <span>AAAI 2025, related work</span></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <nav class="next-proj" aria-label="More projects">
+      <a href="curriculum-analytics.html">Previous: Learning analytics at scale</a>
+      <a href="../index.html#research">Back to all research</a>
+    </nav>
+  </div>
+</main>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <div><h2>Let's talk</h2><p>I'm looking for research scientist and data science roles in industry, especially where AI meets learning.</p></div>
+    <a class="mail" href="mailto:namratasrivastava.research@gmail.com">namratasrivastava.research@gmail.com</a>
+  </div>
+</footer>
+<script src="../assets/site.js"></script>
+</body>
+</html>
