@@ -290,3 +290,8 @@ a.ev:hover .more { text-decoration: underline; text-underline-offset: 3px; }
 footer.foot a { color: var(--ice); text-decoration: none; }
 footer.foot a:hover { color: var(--white); text-decoration: underline; }
 .nav ul a[aria-current="page"] { color: var(--white); text-decoration: underline; text-decoration-color: var(--teal); text-decoration-thickness: 2px; text-underline-offset: 8px; }
+
+/* Academic CV button: outlined, sits next to the filled Résumé button */
+.nav .cv.alt { background: transparent; color: var(--white); border: 1px solid rgba(255,255,255,.45); padding: 7px 15px; }
+.nav .cv.alt:hover { background: rgba(255,255,255,.1); color: var(--white); border-color: var(--white); }
+.nav ul li:has(.cv.alt) { margin-left: -14px; }
