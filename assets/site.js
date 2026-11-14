@@ -42,7 +42,7 @@
     build: "SciStory, a story-based science game where AI characters help students gather evidence and argue a case, and LearnLens, a dashboard that summarizes students' open-ended responses so teachers can act during the lesson.",
     before: "During my PhD I used eye-tracking and thermal imaging to measure cognitive load. At Monash, I worked on learning analytics at scale, including 7M+ course enrollment records.",
     measure: "I look past clicks and time-on-task to students' strategies, sequences of actions, attention, and cognitive load, and connect them to learning outcomes.",
-    roles: "Yes. I'm looking for research scientist and data science roles in industry, especially where AI meets learning. Email me at namratasrivastava.research@gmail.com."
+    roles: "Yes. I am looking for a role where I can keep studying how students learn and building tools that help them, in a university, research lab, or product team. Email me at namratasrivastava.research@gmail.com."
   };
   const log = document.getElementById('chatlog');
   document.querySelectorAll('#chips button').forEach(b => b.addEventListener('click', () => {
